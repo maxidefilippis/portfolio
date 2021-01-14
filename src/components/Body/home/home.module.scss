@@ -8,6 +8,10 @@
     width: 100vw;
     background-color: white;
     padding-top: 50px;
+    &.dark{
+        background-color: black;
+        color: white;
+    }
 }
 
 .img{
