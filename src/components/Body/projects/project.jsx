@@ -5,12 +5,12 @@ import "aos/dist/aos.css";
 
 const Project = ({ project }) => {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1500 });
   }, []);
 
   return (
-    <div data-aos="fade-left" className={style.card}>
-      <img className={style.img} src={require(project.img)} alt="project img" />
+    <div data-aos={project.animation} className={style.card}>
+      <img className={style.img} src={project.img} alt="project img" />
       <h3 className={style.title}>{project.title}</h3>
       <p className={style.description}>{project.description}</p>
     </div>

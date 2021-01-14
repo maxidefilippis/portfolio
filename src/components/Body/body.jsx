@@ -1,7 +1,7 @@
 import React from "react";
-import style from "./body.module.css"
+import style from "./body.module.scss"
 import Home from "./home/home"
-import Projects from "./project/projects"
+import Projects from "./projects/projects"
 
 
 const Body = () => {
