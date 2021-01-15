@@ -1,9 +1,15 @@
+@import "../../styles/variables";
+
 .footer{
-    background-color: black;
-    color: white;
+    background-color: $back-dark;
+    color: $text-dark;
     height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 16;
+    &.dark{
+        background-color: $back-light;
+        color: $text-light;
+    }
 }

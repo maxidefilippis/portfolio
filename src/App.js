@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import Footer from "./components/Footer/footer";
 import Body from "./components/Body/body";
 import Header from "./components/Header/header";
@@ -8,7 +8,7 @@ function App() {
   const [theme, setTheme] = React.useState(themes.light);
 
   const toggleTheme = () => {
-    setTheme(!theme)
+    setTheme(!theme);
   };
 
   return (

@@ -1,18 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
-
-:root{
-  --bg: #242526;
-  --bg-accent: #484a4d;
-  --text-color: #f0f0f0;
-  --link-color: #000;
-  --warning-color:#f0ac4ece;
-  --danger-color: #d9534f;
-  --nav-size: 80px;
-  --border: 1px solid #474a4d;
-  --border-danger: 1px solid #c23f3a;
-  --radius: 10px;
-  --speed: 500ms;
-}
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
 *{
   box-sizing: border-box;
@@ -30,8 +16,8 @@ body {
 }
 
 h1{
-  font-family: 'Hachi Maru Pop', cursive;
-  font-size: 30px;
+  font-family: 'Sacramento', cursive;
+  font-size: 50px;
   margin-bottom: 20px;
 }
 
