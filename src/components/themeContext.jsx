@@ -1,10 +1,13 @@
 import React from "react";
 
-export const themes = {
-  dark: true,
-  light: false,
-};
+const ThemeContext = React.createContext();
 
-const ThemeContext = React.createContext(themes.light);
+const isDarkMode = () => {
+  let isDarkMode = localStorage.getItem("dark-mode");
+  isDarkMode === "true" ? isDarkMode = true : isDarkMode = false;  
+  return isDarkMode;
+}
+
+export const darkMode = isDarkMode()
 
 export default ThemeContext;

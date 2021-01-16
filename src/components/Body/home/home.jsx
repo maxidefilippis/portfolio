@@ -11,7 +11,7 @@ const Home = () => {
       
       <img className={style.img} src={img} alt="foto de perfil" />
       <div className={style.description}>
-        <h1 className={style.name}>Maxi De Filippis</h1>
+        <h1 className="animate__animated animate__swing">Maxi De Filippis</h1>
         <h2 className={style.profesion}> - FULL STACK DEVELOPER -</h2>
       </div>
     </div>

@@ -40,12 +40,11 @@ const Header = ({ toggleTheme, theme }) => {
         <span className={style.link}>Contact </span>
       </div>
       <div className={style.switchSection}>
-        <span>{!darkMode ? "Light Theme" : "Dark Theme"}</span>
+        <span>{darkMode ? "Light Theme" : "Dark Theme"}</span>
         <button
           className={
-            !darkMode ? [style.switch, style.active].join(" ") : style.switch
+            darkMode ? style.switch : [style.switch, style.active].join(" ")
           }
-          id="switch"
           onClick={toggleTheme}
         >
           <span className={style.span}>

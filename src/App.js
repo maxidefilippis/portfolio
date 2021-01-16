@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "./components/Footer/footer";
 import Body from "./components/Body/body";
 import Header from "./components/Header/header";
-import ThemeContext, { themes } from "./components/themeContext";
+import ThemeContext, { darkMode } from "./components/themeContext";
 
 function App() {
-  const [theme, setTheme] = React.useState(themes.light);
+  const [theme, setTheme] = useState(darkMode);
 
   const toggleTheme = () => {
+    theme
+      ? localStorage.setItem("dark-mode", "false")
+      : localStorage.setItem("dark-mode", "true");
     setTheme(!theme);
   };
 
