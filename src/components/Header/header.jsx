@@ -7,7 +7,7 @@ const Header = ({ toggleTheme, theme }) => {
   const [navbar, setNavbar] = useState(false);
 
   const detectTop = () => {
-    if (window.scrollY > 100) {
+    if (window.scrollY > 20) {
       setNavbar(true);
     } else {
       setNavbar(false);
@@ -17,18 +17,10 @@ const Header = ({ toggleTheme, theme }) => {
   window.addEventListener("scroll", detectTop);
 
   const styleController = () => {
-    if (darkMode && navbar) {
-      return [style.header, style.dark, style.active].join(" ");
-    }
-    if (darkMode && !navbar) {
-      return [style.header, style.dark].join(" ");
-    }
-    if (!darkMode && navbar) {
-      return [style.header, style.active].join(" ");
-    }
-    if (!darkMode && !navbar) {
-      return style.header;
-    }
+    if (darkMode && navbar) return [style.header, style.dark, style.active].join(" ");
+    if (darkMode && !navbar) return [style.header, style.dark].join(" ");
+    if (!darkMode && navbar) return [style.header, style.active].join(" ");
+    if (!darkMode && !navbar) return style.header;
   };
 
   return (
@@ -47,10 +39,10 @@ const Header = ({ toggleTheme, theme }) => {
           }
           onClick={toggleTheme}
         >
-          <span className={style.span}>
+          <span className={style.icon}>
             <i className="fas fa-sun"></i>
           </span>
-          <span className={style.span}>
+          <span className={style.icon}>
             <i className="fas fa-moon"></i>
           </span>
         </button>

@@ -6,13 +6,10 @@ import themeContext from "../themeContext";
 
 const Body = () => {
   const darkMode = useContext(themeContext);
+
   return (
     <main>
-      <div
-        className={
-          darkMode ? [style.body, style.darkBody].join(" ") : style.body
-        }
-      >
+      <div className={ darkMode ? [style.body, style.darkBody].join(" ") : style.body }>
         <Home />
         <Projects />
       </div>

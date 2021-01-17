@@ -16,9 +16,11 @@ function App() {
 
   return (
     <ThemeContext.Provider value={theme}>
-      <Header toggleTheme={toggleTheme} />
-      <Body />
-      <Footer />
+      <div style={ theme ? { backgroundColor: "#f0f0f0" } : { backgroundColor: "#242526" }}>
+        <Header toggleTheme={toggleTheme} />
+        <Body />
+        <Footer />
+      </div>
     </ThemeContext.Provider>
   );
 }

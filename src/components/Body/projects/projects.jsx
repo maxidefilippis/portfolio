@@ -2,23 +2,7 @@ import React from "react";
 import style from "./projects.module.scss";
 import themeContext from "../../themeContext";
 import Project from "./project";
-
-const projects = [
-  {
-    img: "../../../img/perfil.jpg",
-    title: "Titulo del proyecto 1",
-    description:
-      "Esta es la descripción de un proyecto y acá cuento como fue realizado",
-    animation: "fade-left",
-  },
-  {
-    img: "../../../img/perfil.jpg",
-    title: "Titulo del proyecto 2",
-    description:
-      "Esta es la descripción de un proyecto y acá cuento como fue realizado",
-    animation: "fade-right",
-  },
-];
+import projects from "./projectList"
 
 const Projects = () => {
   const darkMode = React.useContext(themeContext);
