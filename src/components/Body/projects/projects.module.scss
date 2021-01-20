@@ -32,13 +32,10 @@
   &.dark {
     background-color: $back-light;
     color: $text-light;
-    
   }
 }
 
 .img {
-  height: 150px;
-  width: 250px;
   padding: 15px;
   padding-bottom: 40px;
   margin: 0 auto;
@@ -81,16 +78,28 @@
   margin: 10px;
 }
 
-.link{
+.link {
   text-decoration: none;
   color: white;
   transition: all 0.1s;
-  &.dark{
+  &.dark {
     color: black;
   }
 }
 
-a:hover{
+a:hover {
   transform: scale(1.05);
   color: orange;
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  img{
+    width: 250px;
+  }
 }

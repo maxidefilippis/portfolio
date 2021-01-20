@@ -9,6 +9,7 @@ const Projects = () => {
 
   return (
     <div
+      id="projects"
       className={
         darkMode ? [style.projects, style.dark].join(" ") : style.projects
       }

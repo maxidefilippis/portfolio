@@ -1,41 +1,52 @@
 @import "../../../styles/_variables.scss";
 
-.home{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 50px;
-    height: 100vh;
-    background-color: $back-dark;
-    color: $text-dark;
-    &.dark{
-        background-color: $back-light;
-        color: $text-light;
-    }
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px;
+  height: 100vh;
+  background-color: $back-dark;
+  color: $text-dark;
+  &.dark {
+    background-color: $back-light;
+    color: $text-light;
+  }
 }
 
-.img{
-    width: 250px;
-    height: 250px;
-    margin-bottom: 20px;
-    object-fit: contain;
-    border-radius: 100%;
-    border: 0.1px double rgba(#000000, 0.1);
+.img {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 20px;
+  object-fit: contain;
+  border-radius: 100%;
+  border: 0.1px double rgba(#000000, 0.1);
 }
 
-.description{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.name{
-    margin: 10px 15px;
-    letter-spacing: 0px;
+.name {
+  color: $orange-color;
+}
+
+@media only screen and (max-width: 600px) {
+  .name {
+    margin-top: 10px;
+  }
+  .profesion {
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .name {
     color: $orange-color;
-}
-
-.profesion{
-    letter-spacing: 8px;
+  }
+  .profesion {
+  }
 }
