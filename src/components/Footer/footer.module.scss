@@ -8,11 +8,11 @@
     justify-content: center;
     align-items: center;
     font-size: 16;
-    border-top: 1px solid rgba($orange-color, 0.2);
+    border-top: 1px solid rgba($back-light, 0.1);
     &.dark{
         background-color: $back-light;
         color: $text-light;
-        border-top: 1px solid rgba($orange-color, 0.4);
+        border-top: 1px solid rgba($back-dark, 0.4);
     }
 }
 
@@ -21,19 +21,26 @@
     justify-content: center;
     align-items: center;
     font-size: 2em;
-    color: $orange-color;
     position: relative;
-    top: -42px;
+    top: -45px;
     width:80px;
     height: 80px;
-    border: 1px solid rgba($orange-color,0.4);
     backdrop-filter: blur(10px);
     transition: 0.5s;
     margin: 0 10px;
     border-radius: 100px;
     overflow: hidden;
+    color: rgba($back-light, 0.8);
+    border: 1px solid rgba($back-light,0.8);
+    &.dark{
+        color: rgba($back-dark, 1);
+        border: 1px solid rgba($back-dark, 1);
+    }
     &:hover{
-        transform: translateY(-20px)
+        transform: translateY(-20px);
+        color: $orange-color;
+        border: 2px solid rgba($orange-color,0.5);
+        transition: 0.3s;
     }   
     &::before{
         content: "";

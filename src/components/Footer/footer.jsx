@@ -9,15 +9,20 @@ const Footer = () => {
     <footer
       className={darkMode ? [style.footer, style.dark].join(" ") : style.footer}
     >
-      <a href="https://www.linkedin.com/in/maxidf/" target="_blank">
-        <span className={style.socialIcon}>
-          <i class="fab fa-github"></i>
-        </span>
+      <a
+        className={darkMode ? [style.socialIcon, style.dark].join(" ") : style.socialIcon}
+        href="https://www.linkedin.com/in/maxidf/"
+        target="_blank"
+      >
+        <i class="fab fa-github"></i>
       </a>
-      <a href="https://github.com/maxidefilippis" target="_blank">
-      <span className={style.socialIcon}>
+
+      <a
+        className={darkMode ? [style.socialIcon, style.dark].join(" ") : style.socialIcon}
+        href="https://github.com/maxidefilippis"
+        target="_blank"
+      >
         <i class="fab fa-linkedin-in"></i>
-      </span>
       </a>
     </footer>
   );

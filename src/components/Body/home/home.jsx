@@ -1,7 +1,6 @@
 import React from "react";
 import style from "./home.module.scss";
 import imgDark from "../../../img/perfilDark.jpg";
-import imgLight from "../../../img/perfilLight.jpg";
 import themeContext from "../../themeContext";
 
 const Home = () => {

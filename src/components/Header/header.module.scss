@@ -12,7 +12,6 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  font-weight: 600;
   &.dark {
     background-color: $back-light;
     color: $text-light;
@@ -83,13 +82,15 @@
   cursor: pointer;
   &:hover {
     color: $orange-color;
+    font-weight: bold;
+  }
+  &.active {
+    font-weight: bold;
+    color: $orange-color;
   }
 }
 
-.active {
-  color: $orange-color;
-  font-weight: 600;
-}
+
 
 @media only screen and (max-width: 600px) {
   .textMode, .link {
