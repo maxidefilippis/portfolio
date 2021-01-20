@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gudea&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&display=swap");
+@import "./styles/variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  transition: 0.2s;
+}
+
+body {
+  font-family: "Gudea", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 80px;
+  font-family: "Rancho", cursive;
+  letter-spacing: 2px;
+}
+
+h4 {
+  margin: 10px 0px;
+}
+
+
+.custom-shape-divider-bottom-1611116097 {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1611116097 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 115px;
+}
+
+.custom-shape-divider-bottom-1611116097 .shape-fill {
+  fill: $orange-color;
+}
+
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+    letter-spacing: 0px;
+    font-weight: 100;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 22px;
+    letter-spacing: 0px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+    letter-spacing: 8px;
+  }
+}

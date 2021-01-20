@@ -15,9 +15,11 @@ const Projects = () => {
       }
     >
       <h1>Projects</h1>
+      <div className={style.projectsContainer}>
       {projects.map((project, i) => (
         <Project project={project} key={i} />
       ))}
+      </div>
     </div>
   );
 };

@@ -34,7 +34,7 @@ const Header = ({ toggleTheme, theme }) => {
           spy={true}
           smooth={true}
           offset={-70}
-          duration={500}
+          duration={700}
           className={style.home}
         >
           <span className={style.socialIcon}>
@@ -48,7 +48,7 @@ const Header = ({ toggleTheme, theme }) => {
           spy={true}
           smooth={true}
           offset={0}
-          duration={500}
+          duration={700}
           className={style.link}
         >
           <i className="fas fa-tasks" style={{ marginRight: "10px" }}></i>

@@ -1,10 +1,10 @@
 const projects = [
   {
-    title: "E-Commerce ASTRID TOYS",
+    title: "E-Commerce Astrid Toys",
     img: "https://i.ibb.co/0cRfVjb/Astrid-Toys.png",
     description:
       "Esta es la descripción de un proyecto y acá cuento como fue realizado",
-    animation: "fade-left",
+    animation: "fade-up",
     technologies: [
       "React",
       "Redux",
@@ -15,17 +15,30 @@ const projects = [
       "Bootstrap",
       "Passport",
       "Formik",
+      "SCRUM"
     ],
     deploy: "https://astridtoys.herokuapp.com/",
     repositorio: "https://github.com/maxidefilippis/e-commerce",
   },
   {
-    img: "../../../img/perfil.jpg",
+    img:
+      "https://sergioescriba.com/wp-content/uploads/2019/01/tipos-clasificacion-paginas-web.png",
     title: "Henry App",
     description:
       "Esta es la descripción de un proyecto y acá cuento como fue realizado",
-    animation: "fade-right",
-    technologies: ["React-Native", "Expo", "Firebase", "Formik"],
+    animation: "fade-up",
+    technologies: ["React-Native", "Expo", "Firebase", "Drawer-Navigation", "Formik", "SCRUM"],
+    deploy: false,
+    repositorio: "https://github.com/maxidefilippis/StackHenryFlow",
+  },
+  {
+    img:
+      "https://sergioescriba.com/wp-content/uploads/2019/01/tipos-clasificacion-paginas-web.png",
+    title: "Portfolio",
+    description:
+      "Esta es la descripción de un proyecto y acá cuento como fue realizado",
+    animation: "fade-up",
+    technologies: ["React", "SASS", "React Hook Form", "Animate.css", "React-Scroll"],
     deploy: false,
     repositorio: "https://github.com/maxidefilippis/StackHenryFlow",
   },

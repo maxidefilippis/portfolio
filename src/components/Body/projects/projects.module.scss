@@ -8,39 +8,51 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 100px dashed rgba($orange-color, 0.05);
   &.dark {
     background-color: $back-light;
     color: $text-light;
+    border-bottom: 100px dashed rgba($orange-color, 0.6);
   }
+}
+
+.projectsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
   background-color: $back-dark;
   padding: 30px;
   color: $text-dark;
   width: 75%;
-  min-height: 80vh;
-  margin: 100px 0px;
-  box-shadow: 0 0.1rem 0.9rem rgba(0, 0, 0, 0.3);
+  max-width: 350px;
+  min-height: 400px;
+  margin: 30px;
+  box-shadow: 0 0rem 0.4rem rgba(grey, 0.2);
   z-index: 0;
   border-radius: var(--radius);
   transition: ease-in all 2s;
   &.dark {
     background-color: $back-light;
     color: $text-light;
+    box-shadow: 0 0rem 0.5rem rgba(0, 0, 0, 0.3);
   }
 }
 
 .img {
-  padding: 15px;
-  padding-bottom: 40px;
-  margin: 0 auto;
+  padding: 10px;
+  height: 200px;
+  margin: 10px auto;
   object-fit: contain;
-  box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0.3rem rgba(grey, 0.2);
 }
 
 .title {
@@ -58,37 +70,98 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  position: absolute;
+  visibility: hidden;
+  bottom: 0;
+  width: 400px;
+  padding: 20px;
+  opacity: 0;
+  transition: 0.15s;
+  transform: translateY(-120px) translateX(-15%);
+  border-radius: 10px;
+  &::before{
+    content:"";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: $orange-color;
+    bottom: -15px;
+    transform: rotate(45deg);
+  }
+}
+
+.container:hover .techContainer {
+  background-color: $orange-color;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-110px) translateX(-15%);
 }
 
 .technologies {
   border-radius: 12px;
-  background-color: $orange-color;
+  background-color: $back-dark;
   padding: 10px;
   margin: 3px;
+  color: $text-dark;
+}
+
+.techStack {
+  position: relative;
+  margin: 5px auto;
+  background-color: $orange-color;
+  width: 90%;
+  padding: 10px;
+  color: $text-dark;
+  cursor: pointer;
 }
 
 .linkContainer {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   margin: 10px;
 }
-.link {
-  border: 1px solid rgba($orange-color, 1);
+
+.noLink {
+  border: 1px solid rgba(grey, 0.3);
+  min-width: 45%;
+  border-radius: 100px;
   padding: 10px;
   margin: 10px;
-}
-
-.link {
   text-decoration: none;
-  color: white;
-  transition: all 0.1s;
+  color: grey;
+  transition: all 0.2s;
+  cursor: pointer;
   &.dark {
-    color: black;
+    color: grey;
   }
 }
 
-a:hover {
-  transform: scale(1.05);
+.link {
+  border: 1px solid rgba($orange-color, 1);
+  min-width: 45%;
+  border-radius: 100px;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s;
+  &.dark {
+    color: $text-light;
+    font-weight: 600;
+    &:hover {
+      transform: scale(1.05);
+      font-weight: bold;
+      color: $orange-color;
+      box-shadow: 0 0 0.5rem rgba($back-dark, 0.3);
+    }
+  }
+  &:hover {
+    transform: scale(1.05);
+    font-weight: bold;
+    color: $orange-color;
+    box-shadow: 0 0 0.5rem rgba($back-light, 0.05);
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -98,7 +171,7 @@ a:hover {
 }
 
 @media only screen and (min-width: 600px) {
-  img{
+  img {
     width: 250px;
   }
 }
