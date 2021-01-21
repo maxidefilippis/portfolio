@@ -1,10 +1,10 @@
 const projects = [
   {
-    title: "E-Commerce Astrid Toys",
+    title: "Astrid Toys eCommerce",
     img: "https://i.ibb.co/0cRfVjb/Astrid-Toys.png",
     description:
       "Esta es la descripción de un proyecto y acá cuento como fue realizado",
-    animation: "fade-up",
+    animation: "flip-left",
     technologies: [
       "React",
       "Redux",
@@ -26,7 +26,7 @@ const projects = [
     title: "Henry App",
     description:
       "Esta es la descripción de un proyecto y acá cuento como fue realizado",
-    animation: "fade-up",
+    animation: "flip-left",
     technologies: ["React-Native", "Expo", "Firebase", "Drawer-Navigation", "Formik", "SCRUM"],
     deploy: false,
     repositorio: "https://github.com/maxidefilippis/StackHenryFlow",
@@ -37,7 +37,7 @@ const projects = [
     title: "Portfolio",
     description:
       "Esta es la descripción de un proyecto y acá cuento como fue realizado",
-    animation: "fade-up",
+    animation: "flip-left",
     technologies: ["React", "SASS", "React Hook Form", "Animate.css", "React-Scroll"],
     deploy: false,
     repositorio: "https://github.com/maxidefilippis/StackHenryFlow",

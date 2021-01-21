@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import style from "./projects.module.scss";
-import themeContext from "../../themeContext";
+import themeContext from "../../ThemeContext";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -8,7 +8,7 @@ const Project = ({ project }) => {
   const darkMode = React.useContext(themeContext);
 
   useEffect(() => {
-    Aos.init({ duration: 1500 });
+    Aos.init({ duration: 2000 });
   }, []);
 
   return (

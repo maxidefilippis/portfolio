@@ -10,11 +10,11 @@
   flex-direction: column;
   padding-top: 80px;
   padding-bottom: 80px;
-  border-bottom: 100px dashed rgba($orange-color, 0.05);
+  border-bottom: 50px dashed rgba($orange-color, 0.05);
   &.dark {
     background-color: $back-light;
     color: $text-light;
-    border-bottom: 100px dashed rgba($orange-color, 0.6);
+    border-bottom: 50px dashed rgba($orange-color, 0.6);
   }
 }
 
@@ -56,8 +56,9 @@
 }
 
 .title {
-  padding: 5px;
-  font-size: 18px;
+  padding: 5px 0;
+  font-size: 28px;
+  letter-spacing: 1px;
 }
 
 .description {

@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./home.module.scss";
 import imgDark from "../../../img/perfilDark.jpg";
-import themeContext from "../../themeContext";
+import themeContext from "../../ThemeContext";
 
 const Home = () => {
   const darkMode = React.useContext(themeContext);
@@ -16,9 +16,8 @@ const Home = () => {
         <h1 className={`${style.name} animate__animated animate__flash`}>
           Maxi De Filippis
         </h1>
-        <h2 className={style.profesion}>FULL STACK DEVELOPER</h2>
+        <h2 className={style.profesion}>&nbsp;FULL STACK DEVELOPER&nbsp;</h2>
       </div>
-      
     </div>
   );
 };

@@ -9,22 +9,23 @@
   height: 110vh;
   background-color: $back-dark;
   color: $text-dark;
-  border-bottom: 100px dashed rgba($orange-color, 0.05);
+  border-bottom: 50px dashed rgba($orange-color, 0.05);
   &.dark {
     background-color: $back-light;
     color: $text-light;
-    border-bottom: 100px dashed rgba($orange-color, 0.6);
+    border-bottom: 50px dashed rgba($orange-color, 0.6);
   }
 }
 
 .img {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   margin-bottom: 10px;
   object-fit: contain;
   border-radius: 100%;
-  padding: 3px;
-  border: 2px solid rgba($orange-color, 0.3);
+  padding: 4px;
+  cursor: pointer;
+  border: 3px solid rgba($orange-color, 0.3);
   &:hover{
     transform: scale(1.10);
     transition: 0.5s;
@@ -42,6 +43,45 @@
   color: $orange-color;
 }
 
+.profesion {
+  position: relative;
+  z-index: 0;
+  margin-top: 10px;
+  &::before{
+    content: "";
+    width: 0%;
+    height: 40px;
+    background: $orange-color;
+    position: absolute;
+    top: 0;
+    left: -10;
+    animation: animate 2s forwards;
+    z-index: 1;
+    padding-left: -10px;
+  }
+}
+@keyframes animate
+{
+  0%{
+    width: 99%;
+    z-index: 1;
+  }
+  50%{
+    width: 0%;
+    z-index: 1;
+  }
+  51%{
+    width: 0%;
+    z-index: -1;
+  }
+  100%{
+    width: 99%;
+    z-index: -1;
+  }
+}
+
+
+
 @media only screen and (max-width: 600px) {
   .name {
     margin-top: 10px;
@@ -55,6 +95,5 @@
   .name {
     color: $orange-color;
   }
-  .profesion {
-  }
+  
 }

@@ -5,6 +5,7 @@ package-lock.json
 .temp-eslintcache
 .eslint-release-info.json
 .temp-eslintcache
+debug.log
 
 # dependencies
 /node_modules

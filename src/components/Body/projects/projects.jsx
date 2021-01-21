@@ -1,8 +1,8 @@
 import React from "react";
 import style from "./projects.module.scss";
-import themeContext from "../../themeContext";
-import Project from "./project";
-import projects from "./projectList"
+import themeContext from "../../ThemeContext";
+import Project from "./Project";
+import projects from "./ProjectList"
 
 const Projects = () => {
   const darkMode = React.useContext(themeContext);

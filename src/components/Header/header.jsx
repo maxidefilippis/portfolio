@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import style from "./header.module.scss";
-import themeContext from "../themeContext";
+import themeContext from "../ThemeContext";
 
 const Header = ({ toggleTheme, theme }) => {
   const darkMode = useContext(themeContext);
@@ -30,7 +30,7 @@ const Header = ({ toggleTheme, theme }) => {
       <div>
         <Link
           to="home"
-          activeClass={style.active}
+          // activeClass={style.active}
           spy={true}
           smooth={true}
           offset={-70}
@@ -44,7 +44,7 @@ const Header = ({ toggleTheme, theme }) => {
         </Link>
         <Link
           to="projects"
-          activeClass={style.active}
+          // activeClass={style.active}
           spy={true}
           smooth={true}
           offset={0}
@@ -56,7 +56,7 @@ const Header = ({ toggleTheme, theme }) => {
         </Link>
         <Link
           to="skills"
-          activeClass={style.active}
+          // activeClass={style.active}
           spy={true}
           smooth={true}
           offset={0}
@@ -68,7 +68,7 @@ const Header = ({ toggleTheme, theme }) => {
         </Link>
         <Link
           to="contact"
-          activeClass={style.active}
+          // activeClass={style.active}
           spy={true}
           smooth={true}
           offset={0}

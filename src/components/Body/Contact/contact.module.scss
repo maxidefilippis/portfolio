@@ -1,0 +1,18 @@
+@import "../../../styles/variables";
+
+.contact {
+  min-height: 100vh;
+  background-color: $back-dark;
+  color: $text-dark;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  &.dark {
+    background-color: $back-light;
+    color: $text-light;
+  }
+}

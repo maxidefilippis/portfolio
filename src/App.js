@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Footer from "./components/Footer/footer";
-import Body from "./components/Body/body";
-import Header from "./components/Header/header";
-import ThemeContext, { darkMode } from "./components/themeContext";
+import Footer from "./components/Footer/Footer";
+import Body from "./components/Body/Body";
+import Header from "./components/Header/Header";
+import ThemeContext, { darkMode } from "./components/ThemeContext";
 
 function App() {
   const [theme, setTheme] = useState(darkMode);
