@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import style from "./body.module.scss";
-import Home from "./Home/Home";
+import Home from "./Home/Home.jsx";
 import Projects from "./Projects/Projects";
 import Skills from "./Skills/Skills"
 import Contact from "./Contact/Contact"

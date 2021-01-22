@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import style from "./header.module.scss";
 import themeContext from "../ThemeContext";
 

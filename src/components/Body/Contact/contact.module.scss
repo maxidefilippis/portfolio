@@ -10,9 +10,42 @@
   align-items: center;
   flex-direction: column;
   padding-top: 80px;
-  padding-bottom: 80px;
   &.dark {
     background-color: $back-light;
     color: $text-light;
   }
+}
+
+.form{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.input{
+  margin-bottom: 30px;
+  margin-top: 15px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid $back-light;
+  color: $text-dark;
+  outline: none;
+  &.dark{
+    border-bottom: 1px solid $back-dark;
+    color: $text-light;
+  }
+  
+}
+.label{
+  margin-bottom: 10px;
+}
+.button{
+  margin-top: 40px;
+  height: 40px;
+  background: $orange-color;
+  color: black;
+  font-weight: bold;
+  border: none;
 }

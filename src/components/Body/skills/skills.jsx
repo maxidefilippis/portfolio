@@ -1,7 +1,6 @@
 import React from "react";
 import style from "./skills.module.scss";
 import themeContext from "../../ThemeContext";
-import { Icon, InlineIcon } from "@iconify/react";
 
 const Skills = () => {
   const darkMode = React.useContext(themeContext);
@@ -19,7 +18,7 @@ const Skills = () => {
             darkMode ? [style.icons, style.dark].join(" ") : style.icons
           }
         >
-          <i class="fab fa-html5"></i>
+          <i className="fab fa-html5"></i>
           <span className={style.tech}>HTML5</span>
         </span>
         <span
@@ -27,7 +26,7 @@ const Skills = () => {
             darkMode ? [style.icons, style.dark].join(" ") : style.icons
           }
         >
-          <i class="fab fa-css3-alt"></i>
+          <i className="fab fa-css3-alt"></i>
           <span className={style.tech}>CSS3</span>
         </span>
         <span
@@ -35,7 +34,7 @@ const Skills = () => {
             darkMode ? [style.icons, style.dark].join(" ") : style.icons
           }
         >
-          <i class="fab fa-js-square"></i>
+          <i className="fab fa-js-square"></i>
           <span className={style.tech}>JAVASCRIPT</span>
         </span>
         <span
@@ -43,7 +42,7 @@ const Skills = () => {
             darkMode ? [style.icons, style.dark].join(" ") : style.icons
           }
         >
-          <i class="fab fa-react"></i>
+          <i className="fab fa-react"></i>
           <span className={style.tech}>REACT</span>
         </span>
         <span
@@ -51,7 +50,7 @@ const Skills = () => {
             darkMode ? [style.icons, style.dark].join(" ") : style.icons
           }
         >
-          <i class="fab fa-react"></i>
+          <i className="fab fa-react"></i>
           <span className={style.tech}>REACT-NATIVE</span>
         </span>
         <span
@@ -60,7 +59,7 @@ const Skills = () => {
           }
         >
           <span
-            class="iconify"
+            className="iconify"
             data-icon="bx:bxl-redux"
             data-inline="false"
           ></span>
@@ -71,7 +70,7 @@ const Skills = () => {
             darkMode ? [style.icons, style.dark].join(" ") : style.icons
           }
         >
-          <i class="fab fa-bootstrap"></i>
+          <i className="fab fa-bootstrap"></i>
           <span className={style.tech}>BOOTSTRAP</span>
         </span>
         <span
@@ -79,7 +78,7 @@ const Skills = () => {
             darkMode ? [style.icons, style.dark].join(" ") : style.icons
           }
         >
-          <i class="fab fa-sass"></i>
+          <i className="fab fa-sass"></i>
           <span className={style.tech}>SASS</span>
         </span>
       </div>
@@ -90,7 +89,11 @@ const Skills = () => {
             darkMode ? [style.icons, style.dark].join(" ") : style.icons
           }
         >
-          <i class="fade-up"></i>
+          <span
+            className="iconify"
+            data-icon="fa-brands:node-js"
+            data-inline="false"
+          ></span>
           <span className={style.tech}>NODE.JS</span>
         </span>
 
@@ -100,7 +103,7 @@ const Skills = () => {
           }
         >
           <span
-            class="iconify"
+            className="iconify"
             data-icon="simple-icons:express"
             data-inline="false"
           ></span>
@@ -112,7 +115,7 @@ const Skills = () => {
           }
         >
           <span
-            class="iconify"
+            className="iconify"
             data-icon="file-icons:sequelize"
             data-inline="false"
           ></span>
@@ -124,7 +127,7 @@ const Skills = () => {
           }
         >
           <span
-            class="iconify"
+            className="iconify"
             data-icon="cib:postgresql"
             data-inline="false"
           ></span>
@@ -136,7 +139,7 @@ const Skills = () => {
           }
         >
           <span
-            class="iconify"
+            className="iconify"
             data-icon="bx:bxl-firebase"
             data-inline="false"
           ></span>
@@ -148,7 +151,7 @@ const Skills = () => {
           }
         >
           <span
-            class="iconify"
+            className="iconify"
             data-icon="cib:mongodb"
             data-inline="false"
           ></span>
@@ -160,7 +163,7 @@ const Skills = () => {
           }
         >
           <span
-            class="iconify"
+            className="iconify"
             data-icon="cib:graphql"
             data-inline="false"
           ></span>
@@ -172,7 +175,7 @@ const Skills = () => {
             darkMode ? [style.icons, style.dark].join(" ") : style.icons
           }
         >
-          <i class="fab fa-git"></i>
+          <i className="fab fa-git"></i>
           <span className={style.tech}>GIT</span>
         </span>
       </div>

@@ -34,19 +34,18 @@ const Project = ({ project }) => {
               }
               href={project.deploy}
               target="_blank"
+              rel="noreferrer"
             >
               Deploy
             </a>
           ) : (
-            <a
+            <div
               className={
                 darkMode ? [style.dark, style.noLink].join(" ") : style.noLink
               }
-              href={project.deploy}
-              target="_blank"
             >
               Deploy
-            </a>
+            </div>
           )}
           {project.repositorio ? (
             <a
@@ -54,20 +53,19 @@ const Project = ({ project }) => {
                 darkMode ? [style.link, style.dark].join(" ") : style.link
               }
               href={project.repositorio}
+              rel="noreferrer"
               target="_blank"
             >
               Repository
             </a>
           ) : (
-            <a
+            <div
               className={
                 darkMode ? [style.noLink, style.dark].join(" ") : style.noLink
               }
-              href={project.repositorio}
-              target="_blank"
             >
               Repository
-            </a>
+            </div>
           )}
         </div>
       </>
@@ -75,8 +73,10 @@ const Project = ({ project }) => {
         <div className={style.container}>
           <h4 className={style.techStack}>Tech Stack</h4>
           <div className={style.techContainer}>
-            {project.technologies.map((tech) => (
-              <p className={style.technologies}>{tech}</p>
+            {project.technologies.map((tech, e) => (
+              <p key={e} className={style.technologies}>
+                {tech}
+              </p>
             ))}
           </div>
         </div>
