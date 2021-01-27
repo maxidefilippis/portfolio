@@ -29,7 +29,7 @@ const Header = ({ toggleTheme, theme }) => {
     <header className={styleController()}>
       <div>
         <Link
-          to="home"
+          to="#"
           // activeClass={style.active}
           spy={true}
           smooth={true}
