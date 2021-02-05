@@ -13,7 +13,7 @@ const Footer = () => {
         className={
           darkMode ? [style.socialIcon, style.dark].join(" ") : style.socialIcon
         }
-        href="https://www.linkedin.com/in/maxidf/"
+        href="https://github.com/maxidefilippis"
         target="_blank"
         rel="noreferrer"
       >
@@ -24,7 +24,7 @@ const Footer = () => {
         className={
           darkMode ? [style.socialIcon, style.dark].join(" ") : style.socialIcon
         }
-        href="https://github.com/maxidefilippis"
+        href="https://www.linkedin.com/in/maxidf/"
         target="_blank"
         rel="noreferrer"
       >
