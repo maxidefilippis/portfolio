@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import style from "./contact.module.scss";
 import themeContext from "../../ThemeContext";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const darkMode = React.useContext(themeContext);
@@ -12,12 +13,34 @@ const Contact = () => {
   });
 
   const handleSubmit = (e) => {
-    e.prevent.default();
-    console.log(values);
+    e.preventDefault();
+    const data = {
+      from_name: values.name,
+      from_email: values.mail,
+      message: values.content,
+      subject: values.subject,
+    };
+    emailjs
+      .send(
+        "service_zh96avq",
+        "template_8vqgrvd",
+        data,
+        "user_sXnaVrj7W8RvuNT4eH87H"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("El correo se ha enviado de forma exitosa");
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Ocurrió un problema al enviar el correo");
+        }
+      );
   };
 
   const handleChange = (e) => {
-    setValues({...values, [e.target.name] : e.target.value});
+    setValues({ ...values, [e.target.name]: e.target.value });
   };
 
   return (
@@ -73,7 +96,9 @@ const Contact = () => {
           onChange={handleChange}
           placeholder="Message"
         />
-        <button className={style.button}>Send</button>
+        <button className={style.button} type="submit">
+          Send
+        </button>
       </form>
     </div>
   );
