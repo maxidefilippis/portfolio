@@ -22,7 +22,7 @@ const projects = [
   },
   {
     img:
-      "https://sergioescriba.com/wp-content/uploads/2019/01/tipos-clasificacion-paginas-web.png",
+      "https://i.ibb.co/H7DYGrY/Sin-t-tulo-1.png",
     title: "Henry App",
     description:
       "Esta es la descripción de un proyecto y acá cuento como fue realizado",
