@@ -3,7 +3,7 @@ const projects = [
     title: "Astrid Toys eCommerce",
     img: "https://i.ibb.co/0cRfVjb/Astrid-Toys.png",
     description:
-      "Esta es la descripción de un proyecto y acá cuento como fue realizado",
+      "Aplicación web de e-commerce realizada en equipo de 6 personas, utilizando metodologías ágiles y el stack completo de Javascript (React + Node)",
     animation: "flip-left",
     technologies: [
       "React",

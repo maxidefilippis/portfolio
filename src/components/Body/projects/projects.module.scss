@@ -27,7 +27,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   text-align: center;
   background-color: $back-dark;
   padding: 30px;
