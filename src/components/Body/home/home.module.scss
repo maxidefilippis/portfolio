@@ -88,6 +88,9 @@
   }
   .profesion {
     margin-top: 5px;
+    &::before{
+      height: 30px;
+    }
   }
 }
 
