@@ -80,12 +80,17 @@
 }
 
 @media only screen and (max-width: 450px) {
+  .img {
+    margin-top: 50px;
+  }
   .name {
     margin-top: 15px;
     margin-bottom: 5px;
+    font-size: 50px;
   }
   .profesion {
     margin-top: 10px;
+    font-size: 26px;
     &::before {
       height: 35px;
     }
@@ -96,9 +101,15 @@
 }
 @media only screen and (min-width: 450px) and (max-width: 650px) {
   .name {
+    font-size: 60px;
+    letter-spacing: 0px;
+    font-weight: 100;
     margin-top: 10px;
+    margin-bottom: 10px;
   }
   .profesion {
+    font-size: 25px;
+    letter-spacing: 0px;
     margin-top: 5px;
     &::before {
       height: 30px;
