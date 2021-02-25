@@ -92,13 +92,17 @@
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   .textMode, .link {
     display: none;
   }
-}
+  .header {
+    max-height: 10vh;
+    font-size: 1.25rem;
+  }
 
-@media only screen and (min-width: 600px) {
+}
+@media only screen and (min-width: 650px) {
   .textMode {
     display: block;
   }
@@ -109,7 +113,6 @@
     padding: 30px 50px;
   }
 }
-
 @media only screen and (min-width: 768px) {
 }
 @media only screen and (min-width: 992px) {
