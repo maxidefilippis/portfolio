@@ -11,7 +11,7 @@ const Skills = () => {
       className={darkMode ? [style.skills, style.dark].join(" ") : style.skills}
     >
       <h1 className={style.title}>Skills</h1>
-      <h2 className={style.subtitle}>FRONT</h2>
+      <h2 className={style.subtitle}>FRONT-END</h2>
       <div data-aos="fade-up" className={style.skillsContainer}>
         <span
           className={
@@ -82,7 +82,7 @@ const Skills = () => {
           <span className={style.tech}>SASS</span>
         </span>
       </div>
-      <h2 className={style.subtitle}>BACK</h2>
+      <h2 className={style.subtitle}>BACK-END</h2>
       <div data-aos="fade-up" className={style.skillsContainer}>
         <span
           className={
