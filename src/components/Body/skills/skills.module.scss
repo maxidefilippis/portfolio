@@ -10,7 +10,7 @@
   align-items: center;
   flex-direction: column;
   padding-top: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   border-bottom: 50px dashed rgba($orange-color, 0.05);
   &.dark {
     background-color: $back-light;
@@ -19,38 +19,51 @@
   }
 }
 
-.icons{
-    padding: 10px;
-    margin: 10px;
-    border-radius: 1px solid $text-dark;
-    font-size: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 0s;
-    cursor: pointer;
-    &:hover{
-        color: $orange-color;
-        transform: translateY(-20px);
-        transition: 0.15s;
-    }
-}
-
-.tech{
-    font-size: 15px;
-    margin-top: 5px;
-}
-
-.skillsContainer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.subtitle{
-    margin-top: 40px;
-    margin-bottom: 5px;
+.icons {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 1px solid $text-dark;
+  font-size: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0s;
+  cursor: pointer;
+  &:hover {
     color: $orange-color;
+    transform: translateY(-20px);
+    transition: 0.15s;
+  }
+}
+
+.tech {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.subtitle {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: white;
+  background: $orange-color;
+  width: 80%;
+}
+
+@media only screen and (max-width: 450px) {
+  .skillsContainer {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 650px) {
+}
+@media only screen and (min-width: 650px) {
 }
