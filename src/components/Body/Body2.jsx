@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import style from "./body.module.scss";
-import Home from "./Home/Home.jsx";
-import Projects from "./Projects/Projects";
-import Skills from "./Skills/Skills"
-import Contact from "./Contact/Contact"
-import ThemeContext from "../ThemeContext";
+import Home from "./Home2/Home.jsx.js";
+import Projects from "./Projects2/Projects2";
+import Skills from "./Skills2/Skills2"
+import Contact from "./Contact2/Contact2"
+import ThemeContext from "../ThemeContext2";
 
 const Body = () => {
   const darkMode = useContext(ThemeContext);

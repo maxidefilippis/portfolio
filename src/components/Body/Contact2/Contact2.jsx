@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import style from "./contact.module.scss";
-import themeContext from "../../ThemeContext";
+import themeContext from "../../ThemeContext2";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
