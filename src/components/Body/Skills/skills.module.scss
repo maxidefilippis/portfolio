@@ -10,8 +10,8 @@
   align-items: center;
   flex-direction: column;
   padding-top: 50px;
-  padding-bottom: 50px;
-  border-bottom: 50px dashed rgba($orange-color, 0.05);
+  padding-bottom: 80px;
+  border-bottom: 50px dashed rgba($orange-color, 0.3);
   &.dark {
     background-color: $back-light;
     color: $text-light;

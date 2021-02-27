@@ -5,11 +5,11 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 50px;
-  height: 110vh;
+  padding: 10px;
+  height: 100vh;
   background-color: $back-dark;
   color: $text-dark;
-  border-bottom: 50px dashed rgba($orange-color, 0.05);
+  border-bottom: 50px dashed rgba($orange-color, 0.3);
   &.dark {
     background-color: $back-light;
     color: $text-light;
