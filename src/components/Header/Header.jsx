@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-scroll";
 import style from "./header.module.scss";
-import themeContext from "../ThemeContext2";
+import themeContext from "../ThemeContext";
 
 const Header = ({ toggleTheme, theme }) => {
   const darkMode = useContext(themeContext);

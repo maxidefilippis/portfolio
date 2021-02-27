@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./home.module.scss";
 import imgDark from "../../../img/perfilDark.jpg";
-import themeContext from "../../ThemeContext2";
+import themeContext from "../../ThemeContext";
 
 const Home = () => {
   const darkMode = React.useContext(themeContext);

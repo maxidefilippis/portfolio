@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import style from "./projects.module.scss";
-import themeContext from "../../ThemeContext2";
+import themeContext from "../../ThemeContext";
 import Aos from "aos";
 import "aos/dist/aos.css";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./skills.module.scss";
-import themeContext from "../../ThemeContext2";
+import themeContext from "../../ThemeContext";
 
 const Skills = () => {
   const darkMode = React.useContext(themeContext);

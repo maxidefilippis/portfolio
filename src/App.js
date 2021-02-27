@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Footer from "./components/Footer/Footer";
-import Body from "./components/Body/Body";
+import Body from "./components/Body/Body.jsx";
 import Header from "./components/Header/Header";
 import ThemeContext, { darkMode } from "./components/ThemeContext";
 
