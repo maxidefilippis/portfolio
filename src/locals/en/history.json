@@ -3,6 +3,10 @@
         "henry": "Henry Bootcamp",
         "utn": "Ing en sistemas informáticos"
     },
+    "technologies":{
+        "frontEnd": ["HTML", "CSS", "Javascript", "React", "React-Native", "Redux", "SASS", "Bootstrap"],
+        "backEnd": ["Node", "Express", "PostgreSQL", "Firebase", "MongoDB", "SequelizeORM", "Mongoose"]
+    },
     "jobs":{
         "starnet": "",
         "laChacra": "",
