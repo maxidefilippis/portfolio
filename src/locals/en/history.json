@@ -1,15 +1,41 @@
 {
-    "titles": {
-        "henry": "Henry Bootcamp",
-        "utn": "Ing en sistemas informáticos"
+  "education": {
+    "henry": "Henry Bootcamp",
+    "utn": "Ing en sistemas informáticos"
+  },
+  "technologies": {
+    "frontEnd": [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "React",
+      "React-Native",
+      "Redux",
+      "SASS",
+      "Bootstrap"
+    ],
+    "backEnd": [
+      "Node",
+      "Express",
+      "PostgreSQL",
+      "Firebase",
+      "MongoDB",
+      "SequelizeORM",
+      "Mongoose"
+    ]
+  },
+  "jobs": {
+    "starnet": {
+      "jobTitle": "Funcional Analist",
+      "duration": "4 years"
     },
-    "technologies":{
-        "frontEnd": ["HTML", "CSS", "Javascript", "React", "React-Native", "Redux", "SASS", "Bootstrap"],
-        "backEnd": ["Node", "Express", "PostgreSQL", "Firebase", "MongoDB", "SequelizeORM", "Mongoose"]
+    "laChacra": {
+      "jobTitle": "Funcional Analist",
+      "duration": "2 years"
     },
-    "jobs":{
-        "starnet": "",
-        "laChacra": "",
-        "SMAT": ""
+    "SMAT": {
+      "jobTitle": "Front-End Developer",
+      "duration": "3 months (Present)"
     }
+  }
 }
