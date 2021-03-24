@@ -1,7 +1,20 @@
 {
   "education": {
-    "henry": "Henry Bootcamp",
-    "utn": "Ing en sistemas informáticos"
+    "henry": {
+      "label": "Henry Academy",
+      "title": "Henry Bootcamp",
+      "duration": "4 months (700hs)"
+    },
+    "utn": {
+      "label": "Universidad Tecnológica Nacional",
+      "title": "Ing en Sistemas Informáticos",
+      "duration": "3 years"
+    },
+    "digitalHouse": {
+      "label": "Digital House Academy",
+      "title": "FullStack Bootcamp",
+      "duration": "4 months (300hs)"
+    }
   },
   "technologies": {
     "frontEnd": [
