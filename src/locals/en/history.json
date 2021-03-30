@@ -3,17 +3,58 @@
     "henry": {
       "label": "Henry Academy",
       "title": "Henry Bootcamp",
-      "duration": "4 months (700hs)"
+      "duration": "4 months (700hs)",
+      "skills": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "React",
+        "Redux",
+        "Node",
+        "Express",
+        "PostgreSQL",
+        "Sequelize",
+        "Bootstrap",
+        "LESS/SASS"
+      ]
     },
     "utn": {
       "label": "Universidad Tecnológica Nacional",
       "title": "Ing en Sistemas Informáticos",
-      "duration": "3 years"
+      "duration": "3 years",
+      "skills": [
+        "Análisis Matemático",
+        "Algebra y geometría analítica",
+        "Matemática discreta",
+        "Sistemas y organizaciones",
+        "Algoritmos y estructuras de datos",
+        "Arquitectura de computadoras",
+        "Física",
+        "Inglés",
+        "Química",
+        "Análisis matemático 2",
+        "Física 2",
+        "Análisis de sistemas",
+        "Sintaxis y semántica de los lenguajes",
+        "Paradigmas de programación",
+        "Sistemas operativos",
+        "Sistemas de representación"
+      ]
     },
     "digitalHouse": {
       "label": "Digital House Academy",
       "title": "FullStack Bootcamp",
-      "duration": "4 months (300hs)"
+      "duration": "4 months (300hs)",
+      "skills": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "React",
+        "PHP",
+        "Laravel",
+        "SQL",
+        "Bootstrap"
+      ]
     }
   },
   "technologies": {
