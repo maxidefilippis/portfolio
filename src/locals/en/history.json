@@ -55,6 +55,18 @@
         "SQL",
         "Bootstrap"
       ]
+    },
+    "codoACodo": {
+      "label": "Ministery of education Buenos Aires",
+      "title": "Java programmer",
+      "duration": "6 months",
+      "skills": [
+        "Fundamentos de la programación",
+        "Algoritmos",
+        "JAVA",
+        "Desarrollo de software",
+        "Desarrollo personal"
+      ]
     }
   },
   "technologies": {
