@@ -20,23 +20,27 @@ const Contact = () => {
       message: values.content,
       subject: values.subject,
     };
-    emailjs
-      .send(
-        "service_zh96avq",
-        "template_8vqgrvd",
-        data,
-        "user_sXnaVrj7W8RvuNT4eH87H"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          alert("El correo se ha enviado de forma exitosa");
-        },
-        (error) => {
-          console.log(error.text);
-          alert("Ocurrió un problema al enviar el correo");
-        }
-      );
+    if (values.name && values.mail && values.content && values.subject) {
+      emailjs
+        .send(
+          "service_zh96avq",
+          "template_8vqgrvd",
+          data,
+          "user_sXnaVrj7W8RvuNT4eH87H"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            alert("El correo se ha enviado de forma exitosa");
+          },
+          (error) => {
+            console.log(error.text);
+            alert("Ocurrió un problema al enviar el correo");
+          }
+        );
+    } else {
+      alert("Debe completar todos los campos para enviar el mensaje. Gracias!");
+    }
   };
 
   const handleChange = (e) => {
