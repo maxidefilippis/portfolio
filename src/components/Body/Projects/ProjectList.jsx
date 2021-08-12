@@ -50,7 +50,7 @@ const projects = [
       "Animate.css",
       "React-Scroll",
     ],
-    deploy: false,
+    deploy: "https://maxidefilippis.github.io/portfolio/",
     repositorio: "https://github.com/maxidefilippis/StackHenryFlow",
   },
 ];

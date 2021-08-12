@@ -28,62 +28,58 @@ const Project = ({ project }) => {
         <p className={style.description}>{project.description}</p>
       </div>
       <div>
-        <>
-          <div className={style.linkContainer}>
-            {project.deploy ? (
-              <a
-                className={
-                  darkMode ? [style.dark, style.link].join(" ") : style.link
-                }
-                href={project.deploy}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Deploy
-              </a>
-            ) : (
-              <div
-                className={
-                  darkMode ? [style.dark, style.noLink].join(" ") : style.noLink
-                }
-              >
-                Deploy
-              </div>
-            )}
-            {project.repositorio ? (
-              <a
-                className={
-                  darkMode ? [style.link, style.dark].join(" ") : style.link
-                }
-                href={project.repositorio}
-                rel="noreferrer"
-                target="_blank"
-              >
-                Repository
-              </a>
-            ) : (
-              <div
-                className={
-                  darkMode ? [style.noLink, style.dark].join(" ") : style.noLink
-                }
-              >
-                Repository
-              </div>
-            )}
-          </div>
-        </>
-        <>
-          <div className={style.container}>
-            <h4 className={style.techStack}>Tech Stack</h4>
-            <div className={style.techContainer}>
-              {project.technologies.map((tech, e) => (
-                <p key={e} className={style.technologies}>
-                  {tech}
-                </p>
-              ))}
+        <div className={style.linkContainer}>
+          {project.deploy ? (
+            <a
+              className={
+                darkMode ? [style.dark, style.link].join(" ") : style.link
+              }
+              href={project.deploy}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Deploy
+            </a>
+          ) : (
+            <div
+              className={
+                darkMode ? [style.dark, style.noLink].join(" ") : style.noLink
+              }
+            >
+              Deploy
             </div>
+          )}
+          {project.repositorio ? (
+            <a
+              className={
+                darkMode ? [style.link, style.dark].join(" ") : style.link
+              }
+              href={project.repositorio}
+              rel="noreferrer"
+              target="_blank"
+            >
+              Repository
+            </a>
+          ) : (
+            <div
+              className={
+                darkMode ? [style.noLink, style.dark].join(" ") : style.noLink
+              }
+            >
+              Repository
+            </div>
+          )}
+        </div>
+        <div className={style.container}>
+          <h4 className={style.techStack}>Tech Stack</h4>
+          <div className={style.techContainer}>
+            {project.technologies.map((tech, e) => (
+              <p key={e} className={style.technologies}>
+                {tech}
+              </p>
+            ))}
           </div>
-        </>
+        </div>
       </div>
     </div>
   );
